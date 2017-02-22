@@ -1,10 +1,8 @@
 {
   "name": "friend-finder",
   "version": "1.0.0",
-  "description": "",
+  "description": "FriendFinder # Friend Finder WORK IN PROGRESS This is a Dating app. It is a compatability based Friend Finder.",
   "main": "server.js",
-  "dependencies": {},
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -13,10 +11,15 @@
     "type": "git",
     "url": "git+https://github.com/IvonneK/FriendFinder.git"
   },
-  "author": "Ivonne.Komis",
+  "author": "ivonne.komis",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/IvonneK/FriendFinder/issues"
   },
-  "homepage": "https://github.com/IvonneK/FriendFinder#readme"
+  "homepage": "https://github.com/IvonneK/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "path": "^0.12.7"
+  }
 }
