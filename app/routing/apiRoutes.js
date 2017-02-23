@@ -1,8 +1,9 @@
+console.log("apiRoutes.js");
 var friendData = require("../data/friend");
 
 module.exports = function(app) {
 	// show json data
-	app.get("api/friends", function(req, res){
+	app.get("/api/friends", function(req, res){
 		res.json(friend);
 	});
 

@@ -1,6 +1,7 @@
 // Ivonne.Komis
 // FriendFinder app 
 
+console.log("server.js");
 
 // setup server side and listening port
 var express = require("express");
@@ -17,11 +18,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({type: "application/vnd.api+json"}));
 
-// show server different routes to respond to user when they visit a url
-require(".app/routing/apiRoutes")(app);
-require(".app/routing/htmlRoutes")(app);
+// show server different routes to respond to user when they visit a url added .js otherwise wouldn't work
+
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 
 // start server (listener)
 app.listen(PORT, function() {
-	console.log("app is listening to port " + PORT );
-})
+	console.log("[server.js] app is listening to port " + PORT );
+});
