@@ -16,7 +16,8 @@ This is a full-stack site that starts with a survey and then uses the user surve
 - mySQL
 - npm modules used:<br>
 **express** used to <br>
-**body-parser** used to <br>
+**body-parser** used to parse the text as URL encoded data and shows the resulting object(key: value)<br> 
+on req.body. ... bodyParser.json() : Parses the text as JSON then shows the resulting object on req.body
 **path** used to have the ability to <br>
 
 ## Built With:
