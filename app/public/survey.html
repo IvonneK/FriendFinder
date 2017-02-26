@@ -14,39 +14,63 @@
 
 
 
-<div class="well"">
+<!-- <div class="well""> -->
 	<!-- <form action="/api/friend" method="post" class="navbar-form navbar-left" role="search"> -->
 	<!-- <form class="navbar-form navbar-left" > -->
 
 		<!-- <h1 class="text-center">I want to be a Friend</h1> -->
 
-		<div class="well"">
+<div class="well"">
 	<h1 class="text-center">I want to be a Friend</h1>
 
  	<h2 class="text-left">Survey Questions:</h2>
 	<div class="panel panel-info">
-	  	<div class="panel-heading">
-	  		<h3 class="panel-title">1. I speak another language fluently.</h3>
-	  	</div>
-  		<div class="panel-body">
-		    <form>
+	  	
+		  	<div class="panel-heading">
+		  		<h3 class="panel-title">1. I speak another language fluently.</h3>
+		  	</div>
+	  		<div class="panel-body">
+			    <form>
 			    <label class="radio-inline">
-			      <input type="radio" class="scores" name="scores" value=1>1-Strongly Agree
-			    </label>
-			    <label class="radio-inline">
-			      <input type="radio" class="scores" name="scores" value=2>2-Agree
+			      	<input type="radio" class="scores" name="scores" value=1>1-Strongly Agree
 			    </label>
 			    <label class="radio-inline">
-			      <input type="radio" class="scores" name="scores" value=3>3-Undecided
+			      	<input type="radio" class="scores" name="scores" value=2>2-Agree
 			    </label>
 			    <label class="radio-inline">
-			      <input type="radio" class="scores" name="scores" value=4>4-Disagree
+			      	<input type="radio" class="scores" name="scores" value=3>3-Undecided
 			    </label>
 			    <label class="radio-inline">
-			      <input type="radio" class="scores" name="scores" value=5>5-Strongly Disagree
+			      	<input type="radio" class="scores" name="scores" value=4>4-Disagree
 			    </label>
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="scores" value=5>5-Strongly Disagree
 			    </label>
-		  	</form>
+			</div>
+	
+			<!-- <div class="panel panel-info"> -->
+			<div class="panel-heading">
+		  		<h3 class="panel-title">2. What did you say.</h3>
+		  	</div>
+	  		<div class="panel-body">
+			    <form>
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="scores" value=1>1-Strongly Agree
+			    </label>
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="scores" value=2>2-Agree
+			    </label>
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="scores" value=3>3-Undecided
+			    </label>
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="scores" value=4>4-Disagree
+			    </label>
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="scores" value=5>5-Strongly Disagree
+			    </label>   
+
+			   	<!-- </form> -->
 		  		<div class="form-group">
 		  			<label for="name">Name</label>
 		    		<input type="text" class="form-control" placeholder="Name" id="name">
@@ -54,6 +78,7 @@
 		    		<input type="text" class="form-control" placeholder="photo" id="photo">
 				</div>
 				<button type="submit" class="btn btn-primary submit">Submit</button>
+			</form>
 				
 </div>
 
@@ -69,6 +94,7 @@
     // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
     // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
     // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
 
 
     $(".submit").on("click", function(event) {
