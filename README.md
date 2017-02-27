@@ -8,7 +8,7 @@ This is a full-stack site that starts with a survey and then uses the user surve
 
 
 ## What it looks like:
-![alt text](screenshots/.png "Friend Finder")
+![alt text](screenshots/FriendFinderSurvey.png "Friend Finder")
 
 
 ## Technologies Used: 
