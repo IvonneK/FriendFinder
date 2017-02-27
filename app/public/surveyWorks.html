@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Finder</title>
+
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+</head>
+
+<body>
+
+
+
+<!-- <div class="well""> -->
+	<!-- <form action="/api/friend" method="post" class="navbar-form navbar-left" role="search"> -->
+	<!-- <form class="navbar-form navbar-left" > -->
+
+		<!-- <h1 class="text-center">I want to be a Friend</h1> -->
+
+<div class="well"">
+	<h1 class="text-center">I want to be a Friend</h1>
+
+ 	<h2 class="text-left">Survey Questions:</h2>
+	<div class="panel panel-info">
+	  	<form id="survey">
+		  	<div class="panel-heading">
+		  		<h3 class="panel-title">1. I speak another language fluently.</h3>
+		  	</div>
+	  		<div class="panel-body">
+			
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="answer1" value=1>1-Strongly Agree
+			    </label>
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="answer1" value=2>2-Agree
+			    </label>
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="answer1" value=3>3-Undecided
+			    </label>
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="answer1" value='4'>4-Disagree
+			    </label>
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="answer1" value='5'>5-Strongly Disagree
+			    </label>
+			</div>
+
+			<!-- <div class="panel panel-info"> -->
+			<div class="panel-heading">
+		  		<h3 class="panel-title">2. What did you say.</h3>
+		  	</div>
+	  		<div class="panel-body">
+			   
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="answer2" value=1>1-Strongly Agree
+			    </label>
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="answer2" value=2>2-Agree
+			    </label>
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="answer2" value=3>3-Undecided
+			    </label>
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="answer2" value=4>4-Disagree
+			    </label>
+			    <label class="radio-inline">
+			      	<input type="radio" class="scores" name="answer2" value=5>5-Strongly Disagree
+			    </label>   
+
+			   	<!-- </form> -->
+		  		<div class="form-group">
+		  			<label for="name">Name</label>
+		    		<input type="text" class="form-control" placeholder="Name" id="name">
+		    		<label for="name">Photo Link</label>
+		    		<input type="text" class="form-control" placeholder="photo" id="photo">
+				</div>
+				<button type="submit" class="btn btn-primary submit">Submit</button>
+		</form>
+				
+</div>
+
+<div class="list">
+		<form>
+			    <li>
+			      	<input type="radio" class="scores" name="answer2" value='1'>1-Strongly Agree
+			    </li>
+			    <li>
+			      	<input type="radio" class="scores" name="answer2" value='2'>2-Agree
+			    </li>
+			    <li class="radio-inline">
+			      	<input type="radio" class="scores" name="answer2" value='3'>3-Undecided
+			    </li>
+			    <li class="radio-inline">
+			      	<input type="radio" class="scores" name="answer2" value='4'>4-Disagree
+			    </li>
+			    <li class="radio-inline">
+			      	<input type="radio" class="scores" name="answer2" value='5'>5-Strongly Disagree
+			    </li>
+	    </form>   
+</div>
+
+
+
+
+<script type="text/javascript">
+
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+
+
+    $(".submit").on("click", function(event) {
+    	console.log(event);
+    	console.log('submit event');
+      	event.preventDefault();
+
+      // Here we grab the form elements
+	      var newFriend = {
+	        name: $("#name").val().trim(),
+	        photo: $("#photo").val().trim(),
+	        scores: [
+	        	$('input[name="answer1"]:checked', '#survey').val(),
+	        	$('input[name="answer2"]:checked', '#survey').val()
+	        ]
+
+	      };
+
+	      console.log('newFriend', newFriend.name)
+	      console.log('link', newFriend.photo)
+	      console.log('scores', newFriend.scores)
+	      var answer1a = [];
+	      var answer1a = $(".scores input[type=radio]:checked:first").val();
+	      console.log ('answer1a', answer1a);
+		for (var i = 0; i < newFriend.length; i++){
+			this.scores[i];
+			console.log('new friend scores i=' + i + ' '  +  newFriend.scores[i]);	
+		}
+			
+
+	      console.log(newFriend);
+
+	      // This line is the magic. It"s very similar to the standard ajax function we used.
+	      // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+	      // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+	 
+	 		$.post("/api/friend", newFriend, function(data) {
+				console.log('data', data);
+				console.log('newfriend', newFriend);
+		           
+		          // If a table is available... tell user they are booked.
+	          	if (data) {
+	          		alert("Yay! You are officially on the Friend Finder DB");
+	          		// console.log('newfriend.scores', newFriend.scores)
+
+	          	}
+
+          // If a table is available... tell user they on the waiting list.
+		        else {
+		        	alert("Sorry you were not added");
+		        }
+
+          // Clear the form when submitting
+          $("#name").val("");
+	      $("#photo").val("")
+	      $(".scores").val([""]);
+	      
+        });
+
+    });
+
+
+    
+</script>
+
+
+
+</body>
+</html>
