@@ -47,7 +47,7 @@
 			      	<input type="radio" class="scores" name="scores" value=5>5-Strongly Disagree
 			    </label>
 			</div>
-	
+
 			<!-- <div class="panel panel-info"> -->
 			<div class="panel-heading">
 		  		<h3 class="panel-title">2. What did you say.</h3>
@@ -111,6 +111,19 @@
 	        ]
 
 	      };
+
+
+	    $(function () {
+		$('input[name="scores"]').on('click', function() {
+		    if ($(".scores").val()) {
+		        $('.exp').show();
+		        $('.red').hide();
+		    } else {
+		        $('.exp').hide();
+		        $('.red').show();
+		    }
+		})
+		});
 
 	      console.log(newFriend);
 
