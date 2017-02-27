@@ -4,14 +4,15 @@ var friendsArray = [
 	{
 		name: "anyname",
 		photo: "https://static.pexels.com/photos/38630/bodybuilder-weight-training-stress-38630.jpeg",
-		scores: [5]
+		scores: [
+		2]
 	
 	},
 	{
 		name: "Ivonne Komis",
 		photo: "#.jpg",
 		scores:[
-			1
+			3
 		]
 		 
 	}

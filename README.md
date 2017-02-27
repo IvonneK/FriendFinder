@@ -1,5 +1,6 @@
 FriendFinder
-# Friend Finder WORK IN PROGRESS
+# Friend Finder 
+**Working on logic:** match using survey scores and display.
 This is a Dating app. It is a compatability based Friend Finder.
 
 It uses JavaScript, npm express.  
