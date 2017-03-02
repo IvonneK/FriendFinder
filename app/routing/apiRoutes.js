@@ -22,6 +22,6 @@ module.exports = function(app) {
 		console.log('apiRoutes.js after push');
 		res.json(true);		
 
-		console.log('apiRoutes.js res.json');
+		console.log('apiRoutes.js make res.json true');
 	});
 };
