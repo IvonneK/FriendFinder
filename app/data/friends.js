@@ -2,8 +2,8 @@
 
 var friendsArray = [
 	{
-		name: "Member Name",
-		photo: "https://static.pexels.com/photos/38630/bodybuilder-weight-training-stress-38630.jpeg",
+		name: "Po Bear",
+		photo: "https://s-media-cache-ak0.pinimg.com/736x/66/28/98/66289885c532c534671091e42578beab.jpg",
 		scores: [
 		2, 2, 1, 1, 3, 3, 4, 4, 5, 5]
 	

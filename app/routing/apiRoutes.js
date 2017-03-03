@@ -1,23 +1,23 @@
 console.log("apiRoutes.js");
-var friend = require("../data/friend");
+var friends = require("../data/friends");
 
-console.log(friend);
+console.log(friends);
 
 module.exports = function(app) {
 	console.log('apiRoutes // show json data')
 
 	// get data from file
 	console.log('apiRoutes.js just before app.get')
-	app.get("/api/friend", function(req, res){
+	app.get("/api/friends", function(req, res){
 		console.log('apiRoutes.js in app.get')
-		res.json(friend);
+		res.json(friends);
 	});
 
 	// post data from a survey form
 	console.log('apiRoutes.js just before post')
-	app.post("/api/friend", function(req, res){
+	app.post("/api/friends", function(req, res){
 		console.log('apiRoutes.js just before push'); 
-		friend.push(req.body);
+		friends.push(req.body);
 
 		console.log('apiRoutes.js after push');
 		res.json(true);		
