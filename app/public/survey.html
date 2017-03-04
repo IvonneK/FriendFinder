@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
 	<title>Friend Finder</title>
 
 	<!-- Latest compiled and minified CSS & JS -->
@@ -9,368 +10,428 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-static-top">
-  <div class="container pexel-logo-coupleBB">
-  		<h1 class="text-center">Friend Finder</h1>
 
-  </div>
-</nav>
 
-<div class="well"">
-	<h2 class="text-left">Survey Questions:</h2>
-	<div class="panel panel-info" id="survey">
-	  	<div class="panel-heading">
-	  		<h3 class="panel-title">1. I don't like yoga.</h3>
-	  	</div>
-  		<div class="panel-body">
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer1" value="1">1-Strongly Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer1" value="2">2-Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer1" value="3">3-Undecided
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer1" value="4">4-Disagree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer1" value="5">5-Strongly Disagree
-			</label>
-		  </div>
-	  	<div class="panel-heading">
-	  		<h3 class="panel-title">2. I love my job.</h3>
-	  	</div>
-	  	<div class="panel-body">
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer2" value="1">1-Strongly Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer2" value="2">2-Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer2" value="3">3-Undecided
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer2" value="4">4-Disagree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer2" value="5">5-Strongly Disagree
-			</label>
-		</div>
-		<div class="panel-heading">
-		 	<h3 class="panel-title">3. My favorite sport is basketball.</h3>
-		</div>
-		<div class="panel-body">
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer3" value="1">1-Strongly Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer3" value="2">2-Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer3" value="3">3-Undecided
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer3" value="4">4-Disagree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer3" value="5">5-Strongly Disagree
-			</label>
-	  	</div>
-		<div class="panel-heading">
-			<h3 class="panel-title">4. I don't like American Football.</h3>
-		</div>
-		<div class="panel-body">
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer4" value="1">1-Strongly Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer4" value="2">2-Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer4" value="3">3-Undecided
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer4" value="4">4-Disagree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer4" value="5">5-Strongly Disagree
-			</label>
-		</div>
-		<div class="panel-heading">
-			<h3 class="panel-title">5. I go to at least 8 sporting events a year.</h3>
-		</div>
-		<div class="panel-body">
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer5" value="1">1-Strongly Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer5" value="2">2-Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer5" value="3">3-Undecided
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer5" value="4">4-Disagree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer5" value="5">5-Strongly Disagree
-			</label>
-		</div>
-		<div class="panel-heading">
-	  		<h3 class="panel-title">6. A gym membership is useless.</h3>
-		</div>
-		<div class="panel-body">
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer6" value="1">1-Strongly Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer6" value="2">2-Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer6" value="3">3-Undecided
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer6" value="4">4-Disagree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer6" value="5">5-Strongly Disagree
-			</label>
-		</div>
-		<div class="panel-heading">
-		  	<h3 class="panel-title">7. I enjoy visiting cities.</h3>
-		</div>
-		<div class="panel-body">
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer7" value="1">1-Strongly Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer7" value="2">2-Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer7" value="3">3-Undecided
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer7" value="4">4-Disagree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer7" value="5">5-Strongly Disagree
-			</label>
-		</div>
-		<div class="panel-heading">
-			<h3 class="panel-title">8. I participate in 5K walk/run at least once a year.</h3>
-		</div>
-		<div class="panel-body">
-					<label class="radio-inline">
-				<input class="scores" type="radio" name="answer8" value="1">1-Strongly Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer8" value="2">2-Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer8" value="3">3-Undecided
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer8" value="4">4-Disagree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer8" value="5">5-Strongly Disagree
-			</label>
-		</div>
-		<div class="panel-heading">
-			<h3 class="panel-title">9. I don't like going out to dinner on weekends.</h3>
-		</div>
-		<div class="panel-body">
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer9" value="1">1-Strongly Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer9" value="2">2-Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer9" value="3">3-Undecided
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer9" value="4">4-Disagree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer9" value="5">5-Strongly Disagree
-			</label>
+	<!-- Navbar links need additional work -->
+	<nav class="navbar navbar-default navbar-static-top">
+	  <div class="container">
+	  		<h1 class="text-center">Little Bear Friend Finder</h1>
+	  </div>
+	</nav>
+
+	<div class="well"">
+		<h2 class="text-left">Survey Questions:</h2>
+		<div class="panel panel-info" id="survey">
+		  	<div class="panel-heading">
+		  		<h3 class="panel-title">1. I love rolling in the mud.</h3>
+		  	</div>
+	  		<div class="panel-body">
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer1" value="1">1-Strongly Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer1" value="2">2-Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer1" value="3">3-Undecided
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer1" value="4">4-Disagree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer1" value="5">5-Strongly Disagree
+				</label>
+			  </div>
+		  	<div class="panel-heading">
+		  		<h3 class="panel-title">2. I am afraid of people.</h3>
+		  	</div>
+		  	<div class="panel-body">
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer2" value="1">1-Strongly Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer2" value="2">2-Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer2" value="3">3-Undecided
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer2" value="4">4-Disagree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer2" value="5">5-Strongly Disagree
+				</label>
 			</div>
 			<div class="panel-heading">
-				<h3 class="panel-title">10. I prefer caribbean beach vacations.</h3>
+			 	<h3 class="panel-title">3. My favorite sport is climbing trees.</h3>
 			</div>
 			<div class="panel-body">
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer10" value="1">1-Strongly Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer10" value="2">2-Agree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer10" value="3">3-Undecided
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer10" value="4">4-Disagree
-			</label>
-			<label class="radio-inline">
-				<input class="scores" type="radio" name="answer10" value="5">5-Strongly Disagree
-			</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer3" value="1">1-Strongly Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer3" value="2">2-Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer3" value="3">3-Undecided
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer3" value="4">4-Disagree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer3" value="5">5-Strongly Disagree
+				</label>
+		  	</div>
+			<div class="panel-heading">
+				<h3 class="panel-title">4. I don't like American Football.</h3>
+			</div>
+			<div class="panel-body">
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer4" value="1">1-Strongly Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer4" value="2">2-Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer4" value="3">3-Undecided
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer4" value="4">4-Disagree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer4" value="5">5-Strongly Disagree
+				</label>
+			</div>
+			<div class="panel-heading">
+				<h3 class="panel-title">5. I enjoy eating fish.</h3>
+			</div>
+			<div class="panel-body">
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer5" value="1">1-Strongly Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer5" value="2">2-Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer5" value="3">3-Undecided
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer5" value="4">4-Disagree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer5" value="5">5-Strongly Disagree
+				</label>
+			</div>
+			<div class="panel-heading">
+		  		<h3 class="panel-title">6. A gym membership is useless.</h3>
+			</div>
+			<div class="panel-body">
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer6" value="1">1-Strongly Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer6" value="2">2-Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer6" value="3">3-Undecided
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer6" value="4">4-Disagree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer6" value="5">5-Strongly Disagree
+				</label>
+			</div>
+			<div class="panel-heading">
+			  	<h3 class="panel-title">7. I like to hunt.</h3>
+			</div>
+			<div class="panel-body">
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer7" value="1">1-Strongly Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer7" value="2">2-Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer7" value="3">3-Undecided
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer7" value="4">4-Disagree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer7" value="5">5-Strongly Disagree
+				</label>
+			</div>
+			<div class="panel-heading">
+				<h3 class="panel-title">8. I sometimes swim in a pool nearby.</h3>
+			</div>
+			<div class="panel-body">
+						<label class="radio-inline">
+					<input class="scores" type="radio" name="answer8" value="1">1-Strongly Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer8" value="2">2-Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer8" value="3">3-Undecided
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer8" value="4">4-Disagree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer8" value="5">5-Strongly Disagree
+				</label>
+			</div>
+			<div class="panel-heading">
+				<h3 class="panel-title">9. I prefer sleeping all day.</h3>
+			</div>
+			<div class="panel-body">
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer9" value="1">1-Strongly Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer9" value="2">2-Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer9" value="3">3-Undecided
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer9" value="4">4-Disagree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer9" value="5">5-Strongly Disagree
+				</label>
+				</div>
+				<div class="panel-heading">
+					<h3 class="panel-title">10. I prefer living in the woods.</h3>
+				</div>
+				<div class="panel-body">
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer10" value="1">1-Strongly Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer10" value="2">2-Agree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer10" value="3">3-Undecided
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer10" value="4">4-Disagree
+				</label>
+				<label class="radio-inline">
+					<input class="scores" type="radio" name="answer10" value="5">5-Strongly Disagree
+				</label>
+			</div>
 		</div>
+		<div class="form-group">
+		<form>
+			<label for="name">Name</label>
+			<input type="text" class="form-control" placeholder="Name" id="name" >
+			<label for="name">Photo Link</label>
+			<input type="text" class="form-control" placeholder="photo" id="photo">
+		</form>
+		</div>
+		<button type="submit" class="btn btn-primary submit">Submit</button>
 	</div>
-	<div class="form-group">
-	<form>
-		<label for="name">Name</label>
-		<input type="text" class="form-control" placeholder="Name" id="name" >
-		<label for="name">Photo Link</label>
-		<input type="text" class="form-control" placeholder="photo" id="photo">
-	</form>
+
+
+	 
+	<!-- Attempted to get this modal working for alert messages but doesn't turn on. Ask TA's -->
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+	  <div class="modal-dialog modal-sm" role="document">
+	    <div class="modal-content" id="alertDialog">
+	    </div>
+	  </div>
 	</div>
-	<button type="submit" class="btn btn-primary submit">Submit</button>
-</div>
+
+
+	<!-- Modal to show compatible friend -->
+	<div class="modal fade" id="dialogModal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+	      		<div class="modal-header bg-info">
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        		<h4 class="modal-title" id="gridSystemModalLabel"></h4>
+	      		</div>
+	      		<div class="modal-body">
+			        <div class="row">
+						<div class="col-md-6" id="findFriend"></div>
+						<!-- <div class="col-md-4 col-md-offset-4"></div> -->
+					</div>
+					<div class="row">
+						<div class="col-md-6" id="findFriendName"></div>
+						<!-- <div class="col-md-4 col-md-offset-4"></div> -->
+					</div>
+			        <div class="row">
+						<div class="col-md-6 col-md-offset-6" id="matchedFriend"></div>
+						<!-- <div class="col-md-2 col-md-offset-4"></div> -->
+					</div>
+			        <div class="row">
+			          	<div class="col-md-6 col-md-offset-6" id="matchedFriendName"></div>
+			        </div>
+			        <div class="row">
+			          	<div class="col-md-6 text-primary" id="friendCompatibilityScore"></div>
+			        </div>
+			    </div>
+			    <div class="modal-footer bg-info">
+			    	<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			    </div>
+	    	</div><!-- /.modal-content -->
+	  	</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 
 
 
 
+ 	<div id="postedFriend"></div>
 
-<div class="container">
- <div class="alert alert-danger alert-dismissable">
-    <a href="#" class="close alertbox" data-dismiss="alert" aria-label="close">×</a>
-    <!-- <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action. -->
-  </div>
- </div>
 
- <div id="postedFriend"></div>
+<!-- script and spcript links below -->
+	<script type="text/javascript">
 
-<script type="text/javascript">
+	// On Click submit, jQuery grabs all of the fields then sends a post request to our api. the Api knows the route and runs the code. The code "saves" the data to the friend.js 
+		$(".submit").on("click", function(event) {
+		  	event.preventDefault();
 
-// On Click submit, jQuery grabs all of the fields then sends a post request to our api. the Api knows the route and runs the code. The code "saves" the data to the friend.js 
+		  	// get form elements
+		  	var newFriend = {
+		        name: $("#name").val().trim(),
+		        photo: $("#photo").val().trim(),
+			    scores: [
+			        	$('input[name="answer1"]:checked', '#survey').val(),
+			        	$('input[name="answer2"]:checked', '#survey').val(),
+			        	$('input[name="answer3"]:checked', '#survey').val(),
+			        	$('input[name="answer4"]:checked', '#survey').val(),
+			        	$('input[name="answer5"]:checked', '#survey').val(),
+			        	$('input[name="answer6"]:checked', '#survey').val(),
+			        	$('input[name="answer7"]:checked', '#survey').val(),
+			        	$('input[name="answer8"]:checked', '#survey').val(),
+			        	$('input[name="answer9"]:checked', '#survey').val(),
+			        	$('input[name="answer10"]:checked', '#survey').val()
+			        ]
+		    };
 
-	$(".submit").on("click", function(event) {
-		console.log(event);
-	console.log('submit event');
-	  event.preventDefault();
+		  	console.log(newFriend);
+		  	var validName = newFriend.name.length;
+		  	var validPhotoLink = newFriend.photo.length;
+		  	var scoresString = newFriend.scores.toString();
+		  	var validScores = scoresString.length;
 
-	  // Here we grab the form elements
-	  	var newFriend = {
-	        name: $("#name").val().trim(),
-	        photo: $("#photo").val().trim(),
-		    scores: [
-		        	$('input[name="answer1"]:checked', '#survey').val(),
-		        	$('input[name="answer2"]:checked', '#survey').val(),
-		        	$('input[name="answer3"]:checked', '#survey').val(),
-		        	$('input[name="answer4"]:checked', '#survey').val(),
-		        	$('input[name="answer5"]:checked', '#survey').val(),
-		        	$('input[name="answer6"]:checked', '#survey').val(),
-		        	$('input[name="answer7"]:checked', '#survey').val(),
-		        	$('input[name="answer8"]:checked', '#survey').val(),
-		        	$('input[name="answer9"]:checked', '#survey').val(),
-		        	$('input[name="answer10"]:checked', '#survey').val()
-		        ]
-	      };
+			// validate that all fields are entered then post. Alert not working
+			if (validScores < 19){
+				console.log('validScores < 19');
+				$("#alertDialog").text("Invalid Survey: Please answer all 10 questions.")
+			}
+			if (validName < 2){
+				$("#alertDialog").text("Invalid Name: Please enter a name.")
+				console.log('validNmae < 2 charactors')
+			}
+			if (validPhotoLink < 6){
+				$("#alertDialog").text("Invalid Photo Link: Please a Photo Link.")
+				console.log('validPhotoLink < 6')
+			}
+			
 
-	  	console.log(newFriend);
-	  	var validName = newFriend.name.length;
-	  	var validPhotoLink = newFriend.photo.length;
-	  	var scoresString = newFriend.scores.toString();
-	  	var validScores = scoresString.length;
+			if ((validScores > 18) && (validName > 1) && (validPhotoLink > 5)){
+				$("#alertDialog").text("Success.")
+				$.post("/api/friends", newFriend, function(data) {
+					// console.log('data', data);
+					// console.log('newFriend', newFriend);
+			        if (data) {
+			          	runFriendQuery(newFriend);
+			        	$("#alertDialog").append("You are officially on the Friend Finder DB");
+			        }
+					else {			
+			        	alert("Sorry we could not add you to our Friend Finder DB");
+			        }
 
-		// This line is the magic. It"s very similar to the standard ajax function we used.
-		// Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-		// The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-		
-		// validate that all fields are entered then post
-		if (validScores < 19){
-			console.log('validScores < 19');
-			$(".alertbox").text("Invalid Survey: Please answer all 10 questions.")
-		}
-		if (validName < 2){
-			$(".alertbox").text("Invalid Name: Please enter a name.")
-			console.log('validNmae < 2 charactors')
-		}
-		if (validPhotoLink < 6){
-			$(".alertbox").text("Invalid Photo Link: Please a Photo Link.")
-			console.log('validPhotoLink < 6')
-		}
-		
+					// Clear the form when submitting
+					$("#name").val("");
+					$("#photo").val("")
+					$(".scores").val([""]);
+				}); //end post
+			}; //if
+		}); //submit function
 
-		if ((validScores > 18) && (validName > 1) && (validPhotoLink > 5)){
-			$(".alertbox").text("Success.")
-			$.post("/api/friends", newFriend, function(data) {
-				console.log('data', data);
-				console.log('newFriend', newFriend);
-		           
-		          // If a table is available... tell user they are booked.
-		        if (data) {
-		          	runFriendQuery(newFriend);
-		        	alert("You are officially on the Friend Finder DB");
-		        	// toastr.info('You have been added to Friend Finder DB')
-
-		        }
-				else {			
-		        	alert("Sorry we could not add you to our Friend Finder DB");
-		        }
-
-				// Clear the form when submitting
-				// runFriendQuery();
-				$("#name").val("");
-				$("#photo").val("")
-				$(".scores").val([""]);
-			}); //end post
-		}; //if
-	}); //submit function
-
-	   // In this code, jQuery is used to "download" the data from our server
-	    // We then dynamically display this content in our table. This is very similar to the group projects you just completed.
-	    // It's also very similar to the NYT search application. In fact, I copied a ton of code from there.
-
+		// This function goes through all of the items in the API and compares the newFriend entered(findFriend) to friends in API then it selects the total score that has the lowest number which designates compatability. 
 	    function runFriendQuery(findFriend) {
-	    	console.log(findFriend);
-
-			console.log('runFriendQuery');
 			var currentURL = window.location.origin;
-
-			      // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+			 // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
 			$.ajax({ url: currentURL + "/api/friends", method: "GET" })
 		     	.done(function(friends) {
-
-		        // Here we are logging the URL so we have access to it for troubleshooting
+		        //  show console.log URL and data info for debugging
 		        console.log("------------------------------------");
 		        console.log("URL: " + currentURL + "/api/friends");
 		        console.log("------------------------------------");
 
 		        // Here we then log friend data to displays as an object.
-		        console.log('friends-----------', friends);
+		        console.log("------------------------------------");
+		        console.log('friends object------------', friends);
 		        console.log("------------------------------------");
 
+		        // define variable to use in loop. Must convert radio scores are string must be numeric
+		        // it is my understanding that radio buttons only show text data? confirm with TA
+		        var intMatchFriendScores;
+		        var intFindFriendScores;
+		        
+		        var matchCompare = 0;
+		        var matchTotal = 0;
+		        var matchTotalArray = [];
+
+		        var smallest = 0;
+		        var smallestIndex = 0;
 
 		        // Loop through api/friends to display all friends and check which is compatible.
 		        for (var i = 0; i < friends.length; i++) {
-					console.log(friends.length)
-
-					// var friendDiv = $("<div>");
-					// console.log(friendDiv);
-					// var a = friendDiv.addClass("well");
-					// console.log(a);
-					// var b = friendDiv.attr("id", "postedFriend-" + i + 1);
-					// console.log(b);
-					$("#postedFriend").append("<h2><span class='label label-primary'>" + friends[i].name + "</span></h2><img src='" + friends[i].photo + "' alt='Friend Photo' style=width:304px;height:228px;>");
-					// check for compatibility while running through list
-					// for (var j = 0; j < friend.scores.length; j++) {
-						
-					// }
-
-
+					$("#postedFriend").append("<h2><span class='label label-primary'>" + friends[i].name + "</span></h2><img src='" + friends[i].photo + "' alt='Friend Photo' style=width:304px;height:228px;border-style: double; boarder-width: 5px>;");
+					
+					// check for compatibility while running through array of scores[j] for each friends[i]
+					for (var j = 0; j < friends[i].scores.length; j++) {
+						var friendsScore = friends[i].scores[j];
+						var findFriendScore = findFriend.scores[j];
+						intMatchFriendScores = parseInt(friendsScore);
+						intFindFriendScores = parseInt(findFriendScore);
+		        		matchCompare = intFindFriendScores - intMatchFriendScores;
+						matchTotal += Math.abs(matchCompare);
+					}
+					matchTotalArray.push(matchTotal);
+					matchTotal=0;
 				}
+				smallest = matchTotalArray[0];
+				for (var i = 0; i < (matchTotalArray.length-1); i++){
+					if (matchTotalArray[i] === 0) {
+						smallest = matchTotalArray[i];
+						smallestIndex = i;
+						break;	
+					}	
+					if ((matchTotalArray[i] < smallest) || (matchTotalArray[i] == smallest)) {
+						smallest = matchTotalArray[i];
+						smallestIndex = i;
+					}
+				}
+				
+				// console.log(findFriend.name + ' matched with ' + smallest + ' your new found Friend is ' + friends[smallestIndex].name);
+
+				// jQuery used to Add compatablility information to html
+				$("#dialogModal").modal("show")  
+				$("#gridSystemModalLabel").text(findFriend.name + ' Found a Friend' + friends[smallestIndex].name)
+				
+				$("#findFriend").append("<img src='" + findFriend.photo + "' alt='Find Friend Photo' style=width:250px;height:228px;border-style: double; border-width: 5px;>");
+				$("#findFriendName").append("<h5>" + findFriend.name + "</h5>");
+				
+				$("#matchedFriend").append("<img src='" + friends[smallestIndex].photo + "' alt='Matched Friend Photo' style=width:250px;height:228px;border-style: double; border-width: 5px;>")
+				$("#matchedFriendName").append("<h5>" + friends[smallestIndex].name + "</h5>");
+				
+				$("#friendCompatibilityScore").text("Compatibility score: " + smallest);
+				
+				// matchTotalArray = [];
 	      	}); //ajax 
 	    }; //function
-	// runFriendQuery();
-	
+
 	</script>
 
 </body>
