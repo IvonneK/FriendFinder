@@ -16,7 +16,7 @@ var friendsArray = [
 	},
 		{
 		name: "Hoo Bear",
-		photo: "https://baby-animals.net/wp-content/gallery/Baby-bear-wallpapers/Baby-bear-wallpaper-2.jpg",
+		photo: "https://s-media-cache-ak0.pinimg.com/236x/a0/04/1e/a0041ea3070dbee16150065702d48834.jpg",
 		scores: [
 		"1", "2", "3", "4", "5", "1", "2", "3", "3", "4"]
 	}

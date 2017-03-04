@@ -8,11 +8,15 @@ This is a full-stack site that starts with a survey and then uses the user surve
 
 
 ## What it looks like:
-![alt text](screenshots/FriendFinderSurvey.png "Friend Finder")
-
+![alt text](screenshots/FriendFinderHome.png "Little Bear Friend Finder Home Screen")
+![alt text](screenshots/FriendFinderSurvey.png "Little Bear Friend Finder Survey Screen")
+![alt text](FriendFoundModalScreen.png "Little Bear Friend Found Modal Screen")
+![alt text](AllFriends.png "Little Bear ALL Friends API Screen")
+![alt text](APIAllFriends.png "All Friends api/friends")
 
 ## Technologies Used: 
 - JavaScript 
+- Bootstrap (used modal to display message)
 - node.js 
 - mySQL
 - npm modules used:<br>
