@@ -2,8 +2,8 @@ FriendFinder
 # Friend Finder 
 This is a Little Bear Friend Finder app. It is a compatability based Little Bear Friend Finder. 
 
-It uses JavaScript, npm express, bootstrap, bootstrap modals for dialog box).  
-This is a full-stack site that starts with a survey and then uses the user survey to compare their answers from others. The app dipslay the anme and picture of the user with the best overall match.
+It uses JavaScript, jQuery, npm express, node.js HTML, bootstrap, bootstrap.  
+This is a full-stack site that lets you register via a survey and just name and photo info. It then uses the survey to compare differences in each answer between new Friend vs all other surveys in the JSON file. The Little Bear with the lowest number of differences between new Friend and Little Bear will be selected as the most compatible Little bear. The app will dipslay the name and picture of the new Little Bear Friend and the Little Bear in the friends JSON file. 
 
 
 ## What it looks like:
@@ -17,15 +17,15 @@ This is a full-stack site that starts with a survey and then uses the user surve
 - HTML 
 - JavaScript
 - jQuery 
-- Bootstrap (used modal to display dialog box message)
+- Bootstrap (modals used to display dialog with compatability information)
 - node.js 
 - JSON 
 - AJAX 
-- npm modules used:<br>
+- npm packages used:<br>
 **express** used to <br>
 **body-parser** used to parse the text as URL encoded data and shows the resulting object(key: value)<br> 
-on req.body. ... bodyParser.json() : Parses the text as JSON then shows the resulting object on req.body
-**path** used to have the ability to <br>
+on req.body. bodyParser.json(): Parses the text as JSON then shows the resulting object on req.body<br>
+**path** used to have the ability to locate a file<br>
 
 ## Built With:
 * Sublime Text
