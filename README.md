@@ -17,12 +17,12 @@ This is a full-stack site that lets you register via a survey and just name and 
 - HTML 
 - JavaScript
 - jQuery 
-- Bootstrap (modals used to display dialog with compatability information)
+- Bootstrap (also used modals feature to display a Dialog with Friend Compatability Information)
 - node.js 
 - JSON 
 - AJAX 
 - npm packages used:<br>
-**express** used to <br>
+**express** used for routing and middleware functions(request-req and response-res object) <br>
 **body-parser** used to parse the text as URL encoded data and shows the resulting object(key: value)<br> 
 on req.body. bodyParser.json(): Parses the text as JSON then shows the resulting object on req.body<br>
 **path** used to have the ability to locate a file<br>
