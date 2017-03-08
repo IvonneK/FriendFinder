@@ -2,8 +2,7 @@ FriendFinder
 # Friend Finder 
 This is a Little Bear Friend Finder app. It is a compatability based Little Bear Friend Finder. 
 
-It uses JavaScript, jQuery, npm express, node.js HTML, bootstrap, bootstrap.  
-This is a full-stack site that lets you register via a survey and just name and photo info. It then uses the survey to compare differences in each answer between new Friend vs all other surveys in the JSON file. The Little Bear with the lowest number of differences between new Friend and Little Bear will be selected as the most compatible Little bear. The app will dipslay the name and picture of the new Little Bear Friend and the Little Bear in the friends JSON file. 
+It uses JavaScript, jQuery, npm express, node.js HTML, bootstrap and bootstrap modals feature.  This is a full-stack site. To use it the new Little Bear must register by using the link on main page. The new Friend will need to answer all questions on the survey, enter name and a link to their  photo. The app then uses the survey to compare differences in each answer between the new Friend and existing Friends in the JSON database file. The Little Bear with the lowest number of differences between new Friend and Little Bear already in the database will be selected as the most compatible Little bear. The app then dipslays the name and picture of the new Little Bear Friend and the Little Bear it is most compatible with. 
 
 
 ## What it looks like:
